@@ -1,2 +1,2 @@
 # git
-No README file yet
+GIT repository - @kuryatairina
