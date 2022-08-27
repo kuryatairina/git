@@ -29,12 +29,19 @@
     background-color: #eef9fe;
 }
 
-.header__row {
+/* Header */
+.header__base {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #2d3b94;
     width: 100%;
+}
+
+@media all and (min-width: 768px) {
+    .header__base {
+        padding: 0 70px;
+    }
 }
 
 .nav__mobile {
@@ -43,7 +50,13 @@
     margin: 20px 10px 0 0;
 }
 
-.div__line {
+@media all and (min-width: 768px) {
+    .nav__mobile {
+        display: none;
+    }
+}
+
+.nav__line {
     height: 3px;
     width: 25px;
     background-color: white;
@@ -54,9 +67,35 @@
     display: none;
 }
 
+@media all and (min-width: 768px) {
+    .nav__desktop {
+        display: block;
+    }
+}
 
-/* Section 2 CSS */
-.section2 {
+.nav__wrapper {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.nav__item a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+}
+
+.nav__item:last-of-type a {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* Section 1 CSS */
+.section1 {
     background-image: url(../images/header.jpg);
     text-align: center;
     height: 200px;
@@ -65,30 +104,41 @@
     padding-top: 40px;
 }
 
-.section2__heading {
+.section1__heading {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.section2__paragraph {
+.section1__paragraph {
     font-size: 18px;
     margin-bottom: 3px;
     letter-spacing: 1px;
 }
 
-/* Section 3 CSS */
-
-.section3 {
+/* Section 2 CSS */
+.section2 {
     margin: 30px 15px;
 }
 
-.section3__wrapper {
+@media all and (min-width: 768px) {
+    .section2 {
+        margin: 60px;
+    }
+}
+
+.section2__wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.section3__column {
+@media all and (min-width: 768px) {
+    .section2__wrapper {
+        flex-direction: row;
+    }
+}
+
+.section2__column {
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -98,23 +148,29 @@
     cursor: pointer;
 }
 
-.section3__row {
+@media all and (min-width: 768px) {
+    .section2__column {
+        margin: 0 10px 20px 10px;
+    }
+}
+
+.section2__row {
     position: relative;
 }
 
-.section3__row::after {
+.section2__row::after {
     content: '\2192';
     position: absolute;
     right: 0;
     top: 16px;
 }
 
-.section3__wrapperTI {
+.section2__wrapperTI {
     display: flex;
     flex-direction: row;
 }
 
-.section3__title {
+.section2__title {
     color: #314273;
     font-size: 22px;
     font-weight: bold;
@@ -122,18 +178,18 @@
     margin-left: 5px;
 }
 
-.section3__text {
+.section2__text {
     color: #7a8699;
     letter-spacing: 1px;
     font-size: 16px;
 }
 
-.section3__wrapperButton {
+.section2__wrapperButton {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.section3__button {
+.section2__button {
     color: #5471d2;
     border: 2px solid #5471d2;
     border-radius: 5px;
@@ -143,7 +199,7 @@
     position: relative;
 }
 
-.section3__button::after {
+.section2__button::after {
     content: '\2192';
     position: absolute;
     right: 5px;
@@ -151,39 +207,64 @@
     font-size: 22px;
 }
 
-.section4 {
+/* Section 3 CSS */
+.section3 {
     background-color: #e6e6e6;
     padding: 60px 15px;
 }
 
-.section4__wrapper {
+@media all and (min-width: 768px) {
+    .section3 {
+        padding: 60px;
+    }
+}
+
+.section3__wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.section4__ourBlog {
+@media all and (min-width: 768px) {
+    .section3__wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.section3__row {
+    width: 50%;
+    padding: 40px 20px 0px 0px;
+}
+
+.section3__wrapperImage {
+    height: 300px;
+    width: 50%;
+}
+
+
+.section3__ourBlog {
     margin-bottom: 30px;
     color: #3c4561;
     font-size: 17px;
 }
 
-.section4__heading {
+.section3__heading {
     margin-bottom: 30px;
     font-size: 40px;
 }
 
-.section4__stayUpdated {
+.section3__stayUpdated {
     color: #3c4561;
     font-size: 17px;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
-.section4__block {
+.section3__block {
     margin-bottom: 30px;
 }
 
-.section4__a {
+.section3__link {
     color: #586dce;
     display: block;
     text-decoration: none;
@@ -193,17 +274,17 @@
     letter-spacing: 1px;
 }
 
-.section4__a:hover {
+.section3__link:hover {
     color: #3146a8;
 }
 
-.section4__span {
+.section3__span {
     color: #9fa6bb;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
-.section4__button {
+.section3__button {
     color: white;
     text-decoration: none;
     background-color: #586dce;
@@ -215,46 +296,54 @@
     position: relative;
 }
 
-.section4__button:hover {
+.section3__button:hover {
     background-color: #3146a8;
 }
 
-.section4__button::after {
+.section3__button::after {
     content: '\2192';
     position: absolute;
     right: 10px;
 }
 
-.section4__image {
+.section3__image {
     width: 100%;
 }
-.section5 {
+
+/* Section 4 CSS */
+.section4 {
     padding: 60px 15px;
 }
 
-.section5__information {
+@media all and (min-width: 768px) {
+    .section4 {
+        margin: 60px;
+    }
+}
+
+.section4__information {
     border: 1px solid #aaafc2;
 }
 
-.section5__text {
+.section4__text {
     text-align: center;
 }
 
-.section5__paragraph {
+.section4__paragraph {
     color: #49516c;
     font-size: 18px;
     margin-bottom: 30px;
 }
 
-.section5__heading {
+.section4__heading {
     color: #314273;
     font-size: 40px;
     margin-bottom: 30px;
 }
 
-.section5__aModern {
+.section4__aModern {
     color: #3c4561;
-    height: 200px;
+    min-height: 200px;
     font-size: 18px;
     font-weight: bold;
     display: flex;
@@ -262,66 +351,118 @@
     align-items: center;
 }
 
-.section5__aboutPeople {
+@media all and (min-width: 768px) {
+    .section4__aModern {
+        font-size: 24px;
+        padding: 0px 200px; 
+    }
+}
+
+.section4__aboutPeople {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border-top: 1px solid #aaafc2;
 }
 
-.section5__specificPeople {
+.section4__specificPeople {
     border-right: 1px solid #aaafc2;
     flex: 1;
     padding: 20px;
     text-decoration: none;
 }
 
-.section5__specificPeople:last-of-type {
+.section4__specificPeople:last-of-type {
     border-right: none;
 }
 
-.section5__img {
-    border-radius: 50%;
+@media all and (min-width: 768px) {
+    .section4__specificPeople {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
-.section5__fullName {
+.section4__img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+@media all and (min-width: 768px) {
+    .section4__img {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+}
+
+.section4__fullName {
     color: #314273;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.section5__speciality {
+.section4__speciality {
     color: #aaafc2;
     font-size: 15px;
     margin-bottom: 3px;
 }
 
-.section6 {
+.section4__aboutPeopleText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Section 5 CSS */
+.section5 {
     background-color: #f2f4fa;
     height: 120px;
 }
 
-.section6__wrapper {
+.section5__wrapper {
     padding: 30px 15px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.section6__label {
+@media all and (min-width: 768px) {
+    .section5__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 60px;
+    }
+}
+
+.section5__label {
     color: #3c4561;
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-.section6__input {
+@media all and (min-width: 768px) {
+    .section5__label {
+        width: 50%;
+    }
+}
+
+.section5__input {
     padding: 10px;
     font-size: 15px;
     border-radius: 5px;
     border: 1px solid #aaafc2;
 }
 
-.section6__button {
+@media all and (min-width: 768px) {
+    .section5__input {
+        width: 50%;
+    }
+}
+
+.section5__button {
     position: absolute;
     top: 59px;
     right: 16px;
@@ -332,14 +473,36 @@
     padding: 10px;
 }
 
-.section6__button:hover {
+.section5__button:hover {
     background-color: #3c5dcc;
     cursor: pointer;
 }
 
+@media all and (min-width: 768px) {
+    .section5__button {
+        top: 31px;
+    }
+}
+
+/* Footer CSS */
 .footer {
     padding: 30px 15px;
     background-color: #fafbfe;
+}
+
+@media all and (min-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .footer__wrapper {
+        margin: 0 60px;
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .footer__paragraph {
@@ -348,7 +511,7 @@
     font-size: 16px;
 }
 
-.footer__a {
+.footer__link {
     display: block;
     color: #3d4662;
     text-decoration: none;
@@ -360,140 +523,27 @@
     margin: 50px 0px 30px 0;
 }
 
+@media all and (min-width: 768px) {
+    .footer__divLast {
+        margin: 20px 60px;
+    }
+}
+
 .footer__endWeb {
     color: #bdc3cc;
     font-size: 15px;
 }
 
+.footer__textImg {
+    flex: 2;
+}
+
+.footer__flex {
+    flex: 1;
+}
+
 @media all and (min-width: 768px) {
-    .header__row {
-        padding: 0 70px;
-    }
-
-    .nav__mobile {
-        display: none;
-    }
-
-    .nav__desktop {
-        display: block;
-    }
-
-    .ul__row {
-        list-style-type: none;
-        margin-top: 20px;
-    }
-
-    .ul__row li {
-        display: inline-block;
-    }
-
-    .ul__row li a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 15px;
-        letter-spacing: 1px;
-    }
-    
-    .ul__row li:last-of-type a {
-        border: 2px solid white;
-        border-radius: 5px;
-    }
-
-    .section3 {
-        margin: 60px;
-    }
-
-    .section3__wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .section3__column {
-        margin: 0 10px 20px 10px;
-    }
-
-    .section4 {
-        padding: 60px;
-    }
-
-    .section4__wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .section4__row {
-        width: 50%;
-        padding: 40px 20px 0px 0px;
-    }
-
-    .section4__wrapperImage {
-        height: 300px;
-        width: 50%;
-    }
-
-    .section5 {
-        margin: 60px;
-    }
-
-    .section5__aModern {
-        font-size: 24px;
-        padding: 0px 200px; 
-    }
-
-    .section5__specificPeople {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .section5__img {
-        transform: scale(0.7);
-    }
-
-    .section5__aboutPeopleText {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .section6__wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 60px;
-    }
-
-    .section6__label {
-        width: 50%;
-    }
-
-    .section6__input {
-        width: 50%;
-    }
-
-    .section6__button {
-        top: 31px;
-    }
-
-    .footer__wrapper {
-        margin: 0 60px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer__flex2 {
-        flex: 2;
-    }
-
-    .footer__flex1 {
-        flex: 1;
-    }
-
-    .footer__divLast {
-        margin: 20px 60px;
+    .footer__flex {
+        padding: 10px;
     }
 }
