@@ -80,6 +80,7 @@
 
 .nav__item {
     display: inline-block;
+    height: 45px;
 }
 
 .nav__item a {
@@ -236,12 +237,6 @@
     padding: 40px 20px 0px 0px;
 }
 
-.section3__wrapperImage {
-    height: 300px;
-    width: 50%;
-}
-
-
 .section3__ourBlog {
     margin-bottom: 30px;
     color: #3c4561;
@@ -304,6 +299,17 @@
     content: '\2192';
     position: absolute;
     right: 10px;
+}
+
+.section3__wrapperImage {
+    height: 300px;
+    width: 100%;
+}
+
+@media all and (min-width: 768px) {
+    .section3__wrapperImage {
+        width: 50%;
+    }
 }
 
 .section3__image {

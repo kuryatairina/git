@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Color Definition */
+.blue {
+    background-color: #eafbfe;
+}
+
+.orange {
+    background-color: #fff9eb;
+}
+
+.purple {
+    background-color: #f0efff;
+}
+
+.red {
+    background-color: #fdf4f5;
+}
+
+.green {
+    background-color: #e5fceb;
+}
+
+.aliceblue {
+    background-color: #eef9fe;
+}
+
+.darkblue {
+    background-color: #2d3b94;
+}
+
+.grey {
+    background-color: #e6e6e6;
+}
+
+.greyblue {
+    background-color: #fafbfe;
+}
+
+.lightgrey {
+    background-color: #f2f4fa;
+}
+
+/* Header */
+.header__link {
+    color: white;
+    font-size: 17px;
+}
+
+.header__link:hover {
+    color: white;
+}
+
+.nav-item:last-of-type {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.nav-item:last-of-type .nav-link {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.nav__line {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.navbar-toggler {
+    box-shadow: 0px 0px 0px 0.05rem white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0px 0px 0px 0.15rem white;
+}
+
+.nav__item:last-of-type a {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* Section 1 CSS */
+.section1 {
+    background-image: url(../images/header.jpg);
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.section1__heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section1__paragraph {
+    font-size: 18px;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+}
+
+/* Section 2 CSS */
+.section2__column {
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    min-height: 260px;
+}
+
+.section2__row {
+    position: relative;
+}
+
+.section2__row::after {
+    content: '\2192';
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+
+.section2__title {
+    color: #314273;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 14px;
+    margin-left: 5px;
+}
+
+.section2__text {
+    color: #7a8699;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.section2__button {
+    color: #5471d2;
+    border: 2px solid #5471d2;
+    border-radius: 8px;
+    padding: 10px 35px 10px 15px;
+    font-size: 15px;
+    background-color: white;
+    position: relative;
+    width: 220px;
+}
+
+.section2__button::after {
+    content: '\2192';
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    font-size: 22px;
+}
+
+/* Section 3 CSS */
+.section3__row {
+    padding: 40px 20px 0px 0px;
+}
+
+.section3__wrapperImage {
+    height: 300px;
+}
+
+.section3__heading {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.section3__stayUpdated {
+    color: #3c4561;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.section3__block {
+    margin-bottom: 30px;
+}
+
+.section3__link {
+    color: #586dce;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.section3__link:hover {
+    color: #3146a8;
+}
+
+.section3__span {
+    color: #9fa6bb;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.section3__button {
+    color: white;
+    text-decoration: none;
+    background-color: #586dce;
+    border-radius: 5px;
+    padding: 15px 35px 15px 25px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section3__button:hover {
+    background-color: #3146a8;
+}
+
+.section3__button::after {
+    content: '\2192';
+    position: absolute;
+    right: 10px;
+}
+
+.section3__image {
+    width: 100%;
+}
+
+/* Section 4 CSS */
+.section4__information {
+    border: 1px solid #aaafc2;
+}
+
+.section4__paragraph {
+    color: #49516c;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.section4__heading {
+    color: #314273;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.section4__aModern {
+    color: #3c4561;
+    min-height: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (min-width: 768px) {
+    .section4__aModern {
+        font-size: 24px;
+        padding: 0px 200px; 
+    }
+}
+
+.section4__aboutPeople {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid #aaafc2;
+}
+
+.section4__specificPeople {
+    border-right: 1px solid #aaafc2;
+    flex: 1;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.section4__specificPeople:last-of-type {
+    border-right: none;
+}
+
+@media all and (min-width: 768px) {
+    .section4__specificPeople {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.section4__img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+@media all and (min-width: 768px) {
+    .section4__img {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+}
+
+.section4__fullName {
+    color: #314273;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.section4__speciality {
+    color: #aaafc2;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.section4__aboutPeopleText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Section 5 CSS */
+.section5-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.newsletter_wrapper {
+    position: relative;
+}
+
+.section5__label {
+    color: #3c4561;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media all and (min-width: 768px) {
+    .section5__label {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}
+
+.section5__input {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #aaafc2;
+    width: 100%;
+}
+
+.section5__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #5471d2;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 11px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.section5__button:hover {
+    background-color: #3c5dcc;
+    cursor: pointer;
+}
+
+/* Footer CSS */
+.footer__paragraph {
+    color: #959daa;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.footer__link {
+    display: block;
+    color: #3d4662;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer__endWeb {
+    color: #bdc3cc;
+    font-size: 15px;
+}
+
+.footer__list {
+    list-style-type: none;
+    padding: 0;
+}
