@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    border-radius: 8px;
+}
+.nav__logo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav__form {
+    width: 240px;
+    position: relative;
+}
+
+.nav__form .nav__input {
+    height: 30px;
+    border: none;
+    font-size: 12px;
+}
+
+.navbar-dark .navbar-nav a.nav-link:hover {
+    color: white;
+}
+
+.nav__form .nav__button:hover {
+    color: black;
+    background-color: #e6e6e6;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 1px solid gray;
+}
+
+.nav__form .nav__button {
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 0 8px;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    border: none;
+    height: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 1px solid gray;
+}
+
+.navbar-nav .nav-item a.link_active {
+    color: white;
+}
+
+.nav-tabs {
+    border-radius: 0;
+}
+
+.nav-item {
+    flex: 1
+ }
+
+.nav-link {
+    width: 100%;
+    text-align: center;
+}
+
+.section1 {
+    position: relative;
+}
+
+.section1__img {
+    width: 100%;
+}
+
+.section1__loveCooking {
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    padding: 0 20px;
+    bottom: 20px;
+}
+
+.section1__loremIpsum {
+    position: absolute;
+    bottom: 1px;
+    color: white;
+    background-color: black;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+.section2__connected {
+    align-self: end;
+}
+
+.section2__wrapper {
+    text-align: center;
+}
+
+.section2__title {
+    margin: 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.section2__img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.section2__paragraph {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+}
+
+.section2__marginTop {
+    margin-top: 20px;
+}
+
+.section2__paragraph .section2__link {
+    color: black;
+    font-weight: bold;
+}
+
+.section2__textCenter {
+    text-align: center;
+}
+
+.section2__stayConnected {
+    font-style: italic;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+    margin-bottom: 0;
+}
+
+.section2__wrap {
+    text-align: center;
+}
+
+.section2__newsletter {
+    position: relative;
+    width: 300px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.section2__envelope {
+    margin-bottom: 30px;
+}
+
+.section2__label {
+    font-style: italic;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+    margin-bottom: 30px;
+}
+
+.section2__input {
+    width: 100%;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.section2__button {
+    position: absolute;
+    background-color: white;
+    font-size: 13px;
+    border: none;
+    top: 1px;
+    right: 1px;
+    border-left: 1px solid black;
+    height: 29px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.section2__button:hover {
+    background-color: #e6e6e6;
+}
+
+.footer {
+    border-top: 1px solid black;
+}
+
+.footer__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.footer__loremIpsum {
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.footer__panaVlad {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: gray;
+}
+
+.footer__link {
+    color: black;
+}
+
+.footer__link:hover {
+    color: black;
+}
+
+.blog__title {
+    font-size: 34px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.blog__paragraph {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+}
+
+.blog__img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.blog__loremIpsum {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+}
+
+.blog__button {
+    color: white;
+    font-variant: small-caps;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.blog__wrapper button.blog__button {
+    color: white;
+}
+
+.data__link {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.data__link a {
+    color: black;
+    text-decoration: none;
+}
+
+.blog__logo {
+    color: white;
+    background-color: black;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 24px;
+    font-size: 11px;
+}
+
+.blog__text1 {
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-variant: small-caps;
+}
+
+.blog__text2 {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-variant: small-caps;
+}
+
+.row__border__top {
+    border-top: 1px solid grey;
+}
+
+.input-group button.btn {
+    color: white;
+    font-variant: small-caps;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.input-group input.form-control {
+    font-variant: small-caps;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+    background-image: url(../images/arrow-right.svg);
+    background-size: 50px 50px;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+    background-image: url(../images/arrow-left.svg);
+    background-size: 50px 50px;
+}
+
+
