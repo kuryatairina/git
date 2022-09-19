@@ -1,31 +1,49 @@
-<html>
-    <head>
-        <title>Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    </head>
-    <body>
-        <h1 class="portfolio__title">Portfolio Iryna Kuriata</h1>
-        <div class="portfolio__wrapper">
-            <a href="portfolio/foodRecipes/index.html" class="portfolio__block">
-                <img class="portfolio__img" src="images/foodrecipes.png" alt="Food Recipes Website Photo">
-                <h2 class="portfolio__heading">Food Recipes</h2>
-                <p class="portfolio__text">Website made with <strong>Bootstrap5</strong>. 
-                    Various components used, such as: <strong>Navigation, Carousel, Cards, Offcanvas, Modal, Tabs, etc.</strong></p>
-            </a>
-            <a href="portfolio/stackideasReplicaBootstrap/index.html" class="portfolio__block">
-                <img class="portfolio__img" src="images/stackideas.png" alt="Stack Ideas Replica Photo">
-                <h2 class="portfolio__heading">Replica Stack Ideas</h2>
-                <p class="portfolio__text">Website created on the Bootstrap5 layout structure.
-                    It uses icons from Fond Awesome</p>
-            </a>
-            <a href="portfolio/stackideasReplica/index.html" class="portfolio__block">
-                <img class="portfolio__img" src="images/stackideas.png" alt="Stack Ideas Replica Photo">
-                <h2 class="portfolio__heading">Replica Stack Ideas</h2>
-                <p class="portfolio__text">Website created with the Flex Methodology</p>
-            </a>
-        </div>
-    </body>
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	</head>
+	<body>
+		<div class="container">
+			<nav class="nav__base">
+				<a href="#" class="nav__logo">IK</a>
+				<div class="nav__wrapper">
+					<div class="nav__burger" id="menu">
+						<div class="nav__stick"></div>
+						<div class="nav__stick"></div>
+						<div class="nav__stick"></div>
+					</div>
+					<div class="nav__linkFlex" id="list">
+						<a class="nav__link nav__linkColor" href="index.html">Home</a>
+						<a class="nav__link" href="about.html">About Us</a>
+						<a class="nav__link" href="services.html">Services</a>
+						<a class="nav__link" href="contact.html">Contact</a>
+						<a class="nav__link" href="portfolio.html">Portfolio</a>
+					</div>
+				</div>
+			</nav>
+			<div class="template__homepage">
+				<div class="text__block">
+					<div class="text__relative">
+						<div class="text__homepage">
+							<p class="text__paragraph">UI/UX DESIGNER & DEVELOPER</p>
+							<div>
+								<h1 class="text__title">I'm Iryna Kuriata</h1>
+							</div>
+						</div>
+							<a href="about.html" class="text__button">MORE ABOUT ME  &rarr;</a>
+							<a href="#" class="text__button text__button--color">HIRE ME &rarr;</a>
+						
+						<footer class="footer__block footer__block--homepage">Website created by <span class="footer__span">Kuryata Iryna</span> &copy;2022.</footer>
+					</div>
+				</div>
+				<div class="image__block"></div>
+			</div>
+		</div>
+		<script src="js/myScript.js"></script>
+	</body>
 </html>
