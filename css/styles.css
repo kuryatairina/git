@@ -357,7 +357,13 @@ body {
 
 .template__img {
     width: 100%;
-    height: 120px;
+    height: 250px;
+}
+
+@media all and (min-width: 768px) {
+    .template__img {
+        height: 120px;
+    }
 }
 
 /* About Us */
@@ -458,6 +464,7 @@ body {
     letter-spacing: 1px;
     font-size: 12px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 @media all and (min-width: 768px) {

@@ -80,10 +80,6 @@ function carousel(){
 }
 setTimeout(carousel, 2000)
 
-// I am selecting the image element with the ID - section1-upimg
-// carousel() - I am calling the function carousel
-// window.alert('function carousel called');
-
 
 document.getElementById('section6__allItems').addEventListener('click', function(){
    remove();
@@ -173,3 +169,28 @@ function remove() {
    document.getElementById('section6__preset4').classList.remove('section6__button-active');
    document.getElementById('section6__preset5').classList.remove('section6__button-active');
 }
+
+var iarrow = 1;
+document.getElementById('arrow__right').addEventListener('click', function() {
+   console.log('click');
+
+   iarrow = iarrow + 1;
+
+   if (iarrow > 5) {
+      iarrow = 1;
+   }
+
+   document.getElementById('section7__img').src = "images/s7-img" + iarrow + ".png";
+});
+
+document.getElementById('arrow__left').addEventListener('click', function() {
+   console.log('click left');
+
+   iarrow = iarrow - 1;
+
+   if (iarrow < 1) {
+      iarrow = 5;
+   }
+
+   document.getElementById('section7__img').src = "images/s7-img" + iarrow + ".png";
+});
