@@ -206,14 +206,7 @@ body {
 
 @media all and (min-width: 768px) {
     .text__homepage {
-        margin-top: 200px;
-        text-align: start;
-        margin-bottom: 30px;
-    }
-}
-@media all and (min-width: 992px) {
-    .text__homepage {
-        margin-top: 200px;
+        margin-top: 160px;
         text-align: start;
         margin-bottom: 30px;
     }
@@ -773,9 +766,7 @@ body {
 }
 
 .footer__block--homepage {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    padding: 20px 0 0;
 }
 
 .footer__span {
