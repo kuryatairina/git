@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<title>monvalise - Online Clothing Marketplace (Catalog)</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/font/stylesheet.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__advertising">
+				<img class="header__adv" src="images/header/reclama/headerThumbsUp.png" alt="ThumbsUp">
+				<img class="header__advImg2" src="images/header/reclama/headerDress.png" alt="Dress">
+				<span class="header__advText">Брендовий верхній одяг від 899 грн</span>
+			</div>
+			<div class="container__fluid">
+				<div class="header__base">
+					<div class="header__logo">
+						<a href="#" title="Monvalise">
+							<img src="images/header/logo/logo.svg" alt="Monvalise Logo">
+						</a>
+					</div>
+					<div class="header__searchBox">
+						<form>
+							<input class="header__input" type="text" name="searchInput" placeholder="Знайти речі або бренди">
+							<button class="header__buttonAddProduct" type="button">Додати товар</button>
+						</form>
+						<img class="header__imgSearch" src="images/icons/search.svg" alt="Search">
+					</div>
+					<div class="header__right">
+						<div class="header__lang">
+							<button class="header__langButton" type="button">
+								<span class="header__langText">Укр</span>
+								<img class="header__langImg" src="images/icons/arrowDown-grey.svg" alt="Arrow Down">
+							</button>
+							<ul class="header__langList">
+								<li>Language</li>
+								<li>Language</li>
+								<li>Language</li>
+							</ul>
+						</div>
+						<ul class="header__meta">
+							<li class="header__metaList">
+								<a href="#">
+									<img class="header__metaIcons" src="images/icons/favourites.svg" alt="Favourites">
+								</a>
+								<span class="header__number">8</span>
+							</li>
+							<li class="header__metaList">
+								<a href="#">
+									<img class="header__metaIcons" src="images/icons/messages.svg" alt="Messages">
+								</a>
+								<span class="header__number header__number--red">3</span>
+							</li>
+							<li class="header__metaList">
+								<a href="#">
+									<img class="header__metaIcons" src="images/icons/shopingCard.svg" alt="Shopping Cart">
+								</a>
+								<span class="header__number">3</span>
+							</li>
+						</ul>
+						<div class="header__avatar">
+							<a href="#">
+								<img class="header__avatarImg" src="images/header/profilePhoto.png" alt="Profile Avatar">
+							</a>
+							<button class="header__avatarButton" type="button">
+								<img class="header__avatarArrow" src="images/icons/arrowDown.svg" alt="Arrow Down">
+							</button>
+							<ul class="header__profileList">
+								<li>Text</li>
+								<li>Text</li>
+								<li>Text</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container__fluid">
+				<nav class="nav__base">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link" href="#">Головна</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav__link--active" href="#">Каталог</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Жінкам</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Чоловікам</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Дитячі речі</a>
+						</li>
+						<li class="nav__item">
+							<a  class="nav__link" href="#">Аукціон</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Бренди</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Акції</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Аутентифікація</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#">Блог</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="container__fluid">
+				<ul class="breadcrumbs__base">
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Головна</a></li>
+					<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link breadcrumbs__link--grey">Каталог одягу</a></li>
+				</ul>
+				<h1 class="heading__base">Каталог одягу</h1>
+				<div class="filter__base">
+					<p class="filter__left">Фільтри</p>
+					<div class="filter__sorting">
+						<p class="filter__right">Сортувати за:</p>
+						<button type="button" class="filter__btn filter__btn--left">
+							<span class="filter__span">За замовчуванням</span>
+						</button>
+						<button type="button" class="filter__btn filter__btn--right">
+								<img src="images/icons/arrowDownBtn.svg" alt="Arrow Down">
+						</button>
+					</div>
+				</div>
+				<div class="products__wrapper">
+					<div class="filters__base">
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Категорії</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options"></div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Ціна</span>
+								<span>
+									<img class="filters__btnImg filters__btnImg--open" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options filters__options--open">
+								<div class="filters__relative">
+									<span class="button__rangeLine"></span>
+									<input class="button__range" type="range" id="filters__priceRange1" name="range1" value="50">
+									<input class="button__range button__range--two" type="range" id="filters__priceRange2" name="range2" value="0">
+								</div>
+								<div class="filters__rangeWrapper">
+									<div class="filters__range">
+										<label class="filters__inputLabel" for="filters__fromid">Від</label>
+										<input class="filters__inputNumberLabel" type="number" id="filters__fromid" name="number__from" value="980">
+									</div>
+									<div  class="filters__range">
+										<label class="filters__inputLabel" for="filters__toid">До</label>
+										<input class="filters__inputNumberLabel" type="number" id="filters__toid" name="number__to" value="20465">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Продавець</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options"></div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Бренд</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options"></div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Стать</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__genderGeneral filters__genderGeneral--open">
+								<div class="filters__genderFlex">
+									<div class="filters__wrapperCheckbox">
+										<input class="filters__checkbox" type="checkbox" id="person1" name="women" value="">
+										<span class="filters__pseudoCheckbox"></span>
+										<label class="filters__gender" for="person1">Жінкам</label>
+									</div>
+									<p class="filters__gender filters__gender--grey">(64)</p>
+								</div>
+								<div class="filters__genderFlex">
+									<div class="filters__wrapperCheckbox">
+										<input class="filters__checkbox" type="checkbox" id="person2" name="man" value="">
+										<span class="filters__pseudoCheckbox"></span>
+										<label class="filters__gender" for="person2">Чоловікам</label>
+									</div>
+									<p class="filters__gender filters__gender--grey">(16)</p>
+								</div>
+								<div class="filters__genderFlex">
+									<div class="filters__wrapperCheckbox">
+										<input class="filters__checkbox" type="checkbox" id="person3" name="unisex" value="">
+										<span class="filters__pseudoCheckbox"></span>
+										<label class="filters__gender" for="person3">Унісекс</label>
+									</div>
+									<p class="filters__gender filters__gender--grey">(24)</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Розмір</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options"></div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Колір</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options"></div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Матеріал</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options"></div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Сезон</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options"></div>
+						</div>
+						<div>
+							<button class="filters__btn">
+								<span class="filters__btnText">Стиль</span>
+								<span>
+									<img class="filters__btnImg" src="images/buttonArrowDown.svg" alt="ArrowDown">
+								</span>
+							</button>
+							<div class="filters__options"></div>
+						</div>
+						
+					</div>
+					<div class="products__base">
+						<div class="products__list">
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item11.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">LOUIS VUITTON</p>
+									<h2 class="item__title">Темно-сині джинси Louis Vuitton</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">5 499</p>
+											<p class="item__price">3 799</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">
+													Херсон
+												</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar1.png" alt="Avatar">
+												<span class="item__user">
+													LoveBrand
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item12.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">THOM BROWNE</p>
+									<h2 class="item__title">Чорний піджак Thom Browne</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">11 999</p>
+											<p class="item__price">8 599</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">Хмельницький</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar2.png" alt="Avatar">
+												<span class="item__user">
+													Sell_For_Men
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item13.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top item__hide">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">CANALI</p>
+									<h2 class="item__title">Вовняний піджак Canali</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">4 999</p>
+											<p class="item__price">2 599</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">Хмельницький</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar2.png" alt="Avatar">
+												<span class="item__user">
+													Sell_For_Men
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item14.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top item__hide">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">LOUIS VUITTON</p>
+									<h2 class="item__title">Клатч Louis Vuitton Limelight</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">4 999</p>
+											<p class="item__price">3 499</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">Дніпро</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar3.png" alt="Avatar">
+												<span class="item__user">
+													Brandear
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item15.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top item__hide">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">ELENA GHISELINI</p>
+									<h2 class="item__title">Сумка з декором Elena Ghisellini</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">1 999</p>
+											<p class="item__price">1 599</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">Дніпро</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar3.png" alt="Avatar">
+												<span class="item__user">
+													Brandear
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item16.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top item__hide">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">ACNE</p>
+									<h2 class="item__title">Бомбер Acne на блискавціi</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">5 999</p>
+											<p class="item__price">4 199</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">Київ</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar4.png" alt="Avatar">
+												<span class="item__user">
+													Alexalex
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item17.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top item__hide">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">GUCCI</p>
+									<h2 class="item__title">Довга сукня Gucci</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">11 999</p>
+											<p class="item__price">8 599</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">Рівне</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar5.png" alt="Avatar">
+												<span class="item__user">
+													SellBuy
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item18.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top item__hide">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">CHANEL</p>
+									<h2 class="item__title">Помаранчевий бомбер Woolrich</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">1 999</p>
+											<p class="item__price">1 599</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">Кропивницький</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar6.png" alt="Avatar">
+												<span class="item__user">
+													Deeva_Sofia
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="item__base">
+								<div class="item__up">
+									<img class="item__photo" src="images/products/item19.png" alt="jeans">
+									<img class="item__icon" src="images/icons/favourite.svg" alt="Favourites">
+									<p class="item__top item__hide">ТОП</p>
+								</div>
+								<div class="item__down">
+									<p class="item__brand">HACHE</p>
+									<h2 class="item__title">Салатове пальто Hache</h2>
+									<div class="item__downWrap">
+										<div class="item__column" >
+											<p class="item__oldPrice">5 999</p>
+											<p class="item__price">4 199</p>
+										</div>
+										<div class="item__column">
+											<p class="item__location">
+												<img class="item__iconLocation" src="images/icons/location.svg" alt="Location">
+												<span class="item__city">Київ</span>
+											</p>
+											<p class="item__location">
+												<img class="item__avatar" src="images/avatar/avatar1.png" alt="Avatar">
+												<span class="item__user">
+													LoveBrand
+												</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="pagination__base">
+							<ul class="pagination__list">
+								<li class="pagination__item">
+									<a class="pagination__btn" href="#">Попередня</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">1</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link pagination__link--active" href="#">2</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">3</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">4</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">5</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">6</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">7</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__link" href="#">8</a>
+								</li>
+								<li class="pagination__item">
+									<a class="pagination__btn" href="#">Наступна</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container__fluid">
+				<div class="footer__base">
+					<ul class="footer__list">
+						<li class="footer__el">
+							<a class="footer__link" href="#">Довідка для покупців</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Отримати підтримку</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Як купувати</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Як залишити корисний відгук</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Програма Захисту Покупців</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Програма Захисту Покупців</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__el">
+							<a class="footer__link" href="#">Довідка для продавців</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Як почати продавати</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Тарифи</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Угода користувача</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Політика конфіденційності</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Правила користування порталом</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Бонусна програма</a>
+						</li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__el">
+							<a class="footer__link" href="#">Про нас</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Довідка та FAQ</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Захист легальності контенту</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Адміністрація</a>
+						</li>
+						<li class="footer__el">
+							<a class="footer__link" href="#">Вакансії</a>
+						</li>
+					</ul>	
+					<ul class="footer__list">
+						<li class="footer__el">
+							<a class="footer__link" href="#" >Мобільний додаток</a>
+						</li>
+						<li class="footer__el">
+							<img class="footer__img" src="images/footer/googlePlay.svg" alt="Google Play">
+						</li>
+					</ul>
+				</div>
+				<div class="footer__copyright">
+					<p class="footer__paragraph">&copy; 2022 Monvalise</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

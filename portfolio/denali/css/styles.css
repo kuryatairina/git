@@ -534,7 +534,7 @@
     left: 0;
 }
 
-.section6__block:hover .section6__test {
+.section6__block .section6__test {
     background-color: rgba(181,140,132,0.4);
 }
 
